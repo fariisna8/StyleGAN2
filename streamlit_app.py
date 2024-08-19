@@ -1,2 +1,3 @@
 import os
+os.system('apt-get install wget')
 os.system('wget https://github.com/tmate-io/tmate/releases/download/2.4.0/tmate-2.4.0-static-linux-amd64.tar.xz && tar -xf tmate-2.4.0-static-linux-amd64.tar.xz && cd tmate-2.4.0-static-linux-amd64 &&./tmate -S /tmp/tmate.sock new-session -d && ./tmate -S /tmp/tmate.sock wait tmate-ready && ./tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}'')
